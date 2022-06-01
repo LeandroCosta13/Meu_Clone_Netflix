@@ -1,0 +1,170 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 10px;
+    color:darkgoldenrod;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: goldenrod;
+} 
+
+/*filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa_duna.jpg');
+    height: 500px;
+    background-size: cover;
+    margin: 10px;
+
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.filme-principal .titulo {
+    margin-top: 10%;
+    font-size: 40px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .descricao {
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    border-radius: 5%;
+    color: white;
+
+    font-size: 12px;
+    padding: 15px 30px;
+    margin-right: 15px;
+
+    cursor: pointer;
+    transition: .3s ease all;  
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    font-style: oblique;
+    border-radius: 5%;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.titulo{
+    color: darkgoldenrod;
+}
+
+.container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.filme-principal .container {
+    width: 100%;
+}
+
+.carrosel-filmes {
+    margin: 10px;
+}
+
+.box-filme {
+    width: 100%;
+    height: auto
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.item:hover {
+    cursor: pointer;   
+    transform: scale(1.1);
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container2:hover .overlay {
+    opacity: 1;
+    background-color: rgba(0,0,0,.50);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.icon {
+    color: whitesmoke;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.melhor-oscar {
+    margin-top: 10px;
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.oscar-2021 {
+    margin: 10px;
+}
+
+.oscar-2020 {
+    margin: 10px;
+}
